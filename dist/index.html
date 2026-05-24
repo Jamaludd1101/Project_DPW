@@ -19,6 +19,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -37,19 +42,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class="d-flex gap-2">
-            <a
-              href="login.html"
-              class="btn btn-outline-light btn-sm fw-semibold px-3"
-              >Login</a
-            >
-            <a
-              href="register.html"
-              class="btn btn-light btn-sm text-dark fw-semibold px-3 d-none d-sm-block"
-              >Register</a
-            >
-          </div>
+          <div class="d-flex gap-2" id="navAuth"></div>
         </div>
 
         <div
@@ -136,4 +129,5 @@
       </div>
     </footer>
   </body>
+  <script src="js/autentifikasi.js"></script>
 </html>

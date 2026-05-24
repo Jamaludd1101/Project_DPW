@@ -48,9 +48,8 @@ main {
     background-color: #ffffff;
 
 }
-
 .hero-section {
-    background-image: url("/gambar/home.jpg");
+    background-image: url("../gambar/home.jpg");
     background-size: cover;
     min-height: 380px;
 }

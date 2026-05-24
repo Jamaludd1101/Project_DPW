@@ -19,6 +19,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -38,18 +43,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="d-flex gap-2">
-            <a
-              href="login.html"
-              class="btn btn-outline-light btn-sm fw-semibold px-3"
-              >Login</a
-            >
-            <a
-              href="register.html"
-              class="btn btn-light btn-sm text-dark fw-semibold px-3 d-none d-sm-block"
-              >Register</a
-            >
-          </div>
+          <div class="d-flex gap-2" id="navAuth"></div>
         </div>
 
         <div
@@ -86,7 +80,11 @@
         </h3>
         <div class="row g-4 mb-5 justify-content-center">
           <div class="col-md-6 col-lg-5">
-            <div class="card card-custom shadow">
+            <div
+              class="card card-custom shadow room-card"
+              data-kamar="Deluxe Class"
+              data-total="10"
+            >
               <img
                 src="gambar/kelas-deluxe.jpg"
                 alt="Kelas Deluxe"
@@ -103,8 +101,11 @@
                   <span class="fw-bold text-success fs-5"
                     >Rp 850.000 / Malam</span
                   >
-                  <a href="booking.html" class="btn btn-custom btn-sm">Pesan</a>
+                  <button class="btn btn-custom btn-sm btnpesan">Pesan</button>
                 </div>
+                <p class="small fw-semibold text-primary sisakamar mb-2">
+                  Sisa Kamar: -
+                </p>
               </div>
             </div>
           </div>
@@ -113,7 +114,11 @@
         <h3 class="fw-bold border-bottom pb-2 mb-4 text-center">Kelas Lain</h3>
         <div class="row g-4">
           <div class="col-md-4">
-            <div class="card card-custom h-100 shadow">
+            <div
+              class="card card-custom h-100 shadow room-card"
+              data-kamar="Standard Class"
+              data-total="10"
+            >
               <img
                 src="gambar/kelas-standart.jpg"
                 alt="Kelas Standart"
@@ -124,7 +129,7 @@
                 class="card-body p-4 d-flex flex-column justify-content-between"
               >
                 <div>
-                  <h4 class="fw-bold">Standart Class</h4>
+                  <h4 class="fw-bold">Standard Class</h4>
                   <p class="text-muted small mb-3">
                     Spesifikasi: 1 Single Bed, Kamar Mandi Shower, Wi-Fi Cepat,
                     TV Kabel.
@@ -136,14 +141,21 @@
                   <span class="fw-bold text-success fs-5"
                     >Rp 350.000 / Malam</span
                   >
-                  <a href="booking.html" class="btn btn-custom btn-sm">Pesan</a>
+                  <button class="btn btn-custom btn-sm btnpesan">Pesan</button>
                 </div>
+                <p class="small fw-semibold text-primary sisakamar mb-2">
+                  Sisa Kamar: -
+                </p>
               </div>
             </div>
           </div>
 
           <div class="col-md-4">
-            <div class="card card-custom h-100 shadow">
+            <div
+              class="card card-custom h-100 shadow room-card"
+              data-kamar="Superior Class"
+              data-total="10"
+            >
               <img
                 src="gambar/kelas-superior.jpg"
                 alt="Kelas Superior"
@@ -166,14 +178,21 @@
                   <span class="fw-bold text-success fs-5"
                     >Rp 500.000 / Malam</span
                   >
-                  <a href="booking.html" class="btn btn-custom btn-sm">Pesan</a>
+                  <button class="btn btn-custom btn-sm btnpesan">Pesan</button>
                 </div>
+                <p class="small fw-semibold text-primary sisakamar mb-2">
+                  Sisa Kamar: -
+                </p>
               </div>
             </div>
           </div>
 
           <div class="col-md-4">
-            <div class="card card-custom h-100 shadow">
+            <div
+              class="card card-custom h-100 shadow room-card"
+              data-kamar="President Class"
+              data-total="10"
+            >
               <img
                 src="gambar/kelas-president.jpg"
                 alt="Kelas President"
@@ -196,8 +215,11 @@
                   <span class="fw-bold text-success fs-5"
                     >Rp 1.200.000 / Malam</span
                   >
-                  <a href="booking.html" class="btn btn-custom btn-sm">Pesan</a>
+                  <button class="btn btn-custom btn-sm btnpesan">Pesan</button>
                 </div>
+                <p class="small fw-semibold text-primary sisakamar mb-2">
+                  Sisa Kamar: -
+                </p>
               </div>
             </div>
           </div>
@@ -214,4 +236,7 @@
       </div>
     </footer>
   </body>
+  <script src="js/autentifikasi.js"></script>
+  <script src="js/rooms.js"></script>
+  <script src="js/config.js"></script>
 </html>
