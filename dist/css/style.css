@@ -1,63 +1,61 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f2fdf4;
-    color: #333333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-color: #f2fdf4;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 main {
-    flex: 1;
+  flex: 1;
 }
 
 .bg-custom {
-    background-color: #4A5844 ;
+  background-color: #4a5844;
 }
 
 .table-dark-custom {
-    background-color: #4A5844;
-    color: #ffffff;
+  background-color: #4a5844;
+  color: #ffffff;
 }
 
 .btn-custom {
-    background-color: #A3704C;
-    color: white;
-    border: none;
-    transition: all 0.3s ease;
+  background-color: #a3704c;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
 }
 
 .btn-custom:hover {
-    background-color: #855636;
-    color: white;
+  background-color: #855636;
+  color: white;
 }
 
 .btn-accent {
-    background-color: #D4A373;
-    color: #333333;
-    font-weight: 600;
+  background-color: #d4a373;
+  color: #333333;
+  font-weight: 600;
 }
 
 .btn-accent:hover {
-    background-color: #C19A6B;
+  background-color: #c19a6b;
 }
 
 .card-custom {
-    border: none;
-    border-radius: 12px;
-    background-color: #ffffff;
-
+  border: none;
+  border-radius: 12px;
+  background-color: #ffffff;
 }
-
 .hero-section {
-    background-image: url("../gambar/home.jpg");
-    background-size: cover;
-    min-height: 380px;
+  background-image: url("../gambar/home.jpg");
+  background-size: cover;
+  min-height: 380px;
 }
 
 @media (max-width: 768px) {
-    .hero-section {
-        text-align: center;
-        padding: 30px;
-    }
+  .hero-section {
+    text-align: center;
+    padding: 30px;
+  }
 }
