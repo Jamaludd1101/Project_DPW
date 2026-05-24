@@ -20,8 +20,8 @@
       rel="stylesheet"
     />
     <script
-      src="https://code.jquery.com/jquery-4.0.0.js"
-      integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/style.css" />
@@ -43,13 +43,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="d-flex gap-2">
-            <a
-              href="login.html"
-              class="btn btn-outline-light btn-sm fw-semibold px-3"
-              >Login</a
-            >
-          </div>
+          <div class="d-flex gap-2" id="navAuth"></div>
         </div>
 
         <div
@@ -99,7 +93,7 @@
                     type="text"
                     class="form-control"
                     id="regnama"
-                    placeholder="Masukkan nama"
+                    placeholder="Masukkan nama sesuai KTP"
                     required
                   />
                 </div>
@@ -116,15 +110,13 @@
                   />
                 </div>
                 <div class="mb-4">
-                  <label
-                    for="loginpassword"
-                    class="form-label small fw-semibold"
+                  <label for="regpassword" class="form-label small fw-semibold"
                     >Password</label
                   >
                   <input
                     type="password"
                     class="form-control"
-                    id="loginpassword"
+                    id="regpassword"
                     placeholder="*****"
                     required
                   />
@@ -163,4 +155,6 @@
       </div>
     </footer>
   </body>
+  <script src="js/register.js"></script>
+  <script src="js/autentifikasi.js"></script>
 </html>

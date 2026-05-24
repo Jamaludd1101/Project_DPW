@@ -24,6 +24,11 @@
       integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U="
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -43,18 +48,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="d-flex gap-2">
-            <a
-              href="login.html"
-              class="btn btn-outline-light btn-sm fw-semibold px-3"
-              >Login</a
-            >
-            <a
-              href="register.html"
-              class="btn btn-light btn-sm text-dark fw-semibold px-3 d-none d-sm-block"
-              >Register</a
-            >
-          </div>
+          <div class="d-flex gap-2" id="navAuth"></div>
         </div>
 
         <div
@@ -161,14 +155,16 @@
                     >
                     <select id="kamar" class="form-select" required>
                       <option value="">-- Pilih Kelas Kamar --</option>
-                      <option value="350000">
+                      <option value="350000" data-nama="Standard Class">
                         Standard Class (Rp 350.000)
                       </option>
-                      <option value="500000">
+                      <option value="500000" data-nama="Superior Class">
                         Superior Class (Rp 500.000)
                       </option>
-                      <option value="850000">Deluxe Class (Rp 850.000)</option>
-                      <option value="1200000">
+                      <option value="850000" data-nama="Deluxe Class">
+                        Deluxe Class (Rp 850.000)
+                      </option>
+                      <option value="1200000" data-nama="President Class">
                         President Class (Rp 1.200.000)
                       </option>
                     </select>
@@ -234,7 +230,11 @@
                   </div>
 
                   <div class="col-12 mt-4">
-                    <button type="submit" class="btn btn-custom w-100">
+                    <button
+                      type="submit"
+                      id="tombook"
+                      class="btn btn-custom w-100"
+                    >
                       Pesan Kamar
                     </button>
                   </div>
@@ -248,7 +248,7 @@
               class="card card-custom p-4 position-sticky bg-light"
               style="top: 100px"
             >
-              <h5 class="fw-bold mb-3 border-bottom pb-2">Ringkasan Biaya</h5>
+              <h5 class="fw-bold mb-3 border-bottom pb-2">Ringkasan Pesanan</h5>
               <div class="d-flex justify-content-between mb-2">
                 <span>Kamar :</span>
                 <span id="textkamar" class="fw-semibold">-</span>
@@ -260,6 +260,10 @@
               <div class="d-flex justify-content-between mb-2">
                 <span>Layanan Tambahan :</span>
                 <span id="textlayanan" class="fw-semibold">-</span>
+              </div>
+              <div class="d-flex justify-content-between mb-2">
+                <span>Jumlah Tamu :</span>
+                <span id="texttamu" class="fw-semibold">0 orang</span>
               </div>
               <hr />
               <div class="d-flex justify-content-between align-items-center">
@@ -283,4 +287,7 @@
       </div>
     </footer>
   </body>
+  <script src="js/autentifikasi.js"></script>
+  <script src="js/booking.js"></script>
+  <script src="js/config.js"></script>
 </html>
